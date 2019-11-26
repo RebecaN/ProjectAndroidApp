@@ -5,13 +5,33 @@
 </ion-header>
 
 <ion-content>
-    <ion-scroll scrollX="true" style="white-space: nowrap;">
-
-    </ion-scroll>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="4">
+        <ion-segment scrollable>
+          <ion-segment-button>
+                  <ion-img width="80" height="80" src="../../../images/legume/ardei_iuti.jpg"></ion-img>
+          </ion-segment-button>
+          <ion-segment-button>
+                  <ion-img width="80" height="80"  src="images/legume/ardei_porto.jpg"></ion-img>
+          </ion-segment-button>
+          <ion-segment-button>
+                  <ion-img width="80" height="80"  src="images/legume/ardei_rosii.jpg"></ion-img>
+          </ion-segment-button>
+          <ion-segment-button>
+                  <ion-img width="80" height="80"  src="images/legume/ardei_verzi.jpg"></ion-img>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    
+    <div>
     <ion-button expand="block" routerLink="/recipes" routerDirection="forward">
       Retete
     </ion-button>
   <ion-button expand="block" routerLink="/home" routerDirection="forward">
     Back
   </ion-button>
+</div>
 </ion-content>
