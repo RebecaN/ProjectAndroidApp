@@ -1,3 +1,28 @@
 .Button {
-    --background: #fffefe;
+    --background:#f2f2f2;
+    --background-hover: #f2f2f2;
+    --color:  #800000;
+    width: 250px;
+    height:70px;
+    --opacity: 75%;
+    font-weight: bold;
+    font-size:20px;
+    font-family: "Indie Flower";
+    src: url('../../../fonts/IndieFlower-Regular.ttf');
+
 }
+
+ .Content{
+     padding-top: 2.35cm;
+     padding-left: 0.6cm;
+ 
+}
+
+ .title{
+     --background:  #b32400;
+ }
+
+ ion-content{
+    --background: url('../../../images/photo.jpg');    
+    --background-size: cover;
+ }
