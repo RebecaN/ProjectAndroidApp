@@ -1,7 +1,7 @@
 ion-button{
-    --background:#f2f2f2;
-    --background-hover: #f2f2f2;
-    --color:  #800000;
+    --background:#e6e6ff;
+    --background-hover: #e6e6ff;
+    --color:  #4e4e4e;
     width: 250px;
     height:80px;
     --opacity: 75%;
@@ -19,12 +19,12 @@ ion-button{
 }
 
  .title{
-     --background:  #b32400;
-     color:#e6e6ff;
+     --background:  #a9a9a9;
+     color:#4e4e4e;
      text-align: left;
  }
 
  ion-content{
-    --background: url('../../../images/photo.jpg');    
+    --background: url('../../../images/cover.jpg');    
     --background-size: cover;
  }
