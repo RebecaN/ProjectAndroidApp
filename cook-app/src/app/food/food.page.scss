@@ -1,0 +1,25 @@
+ion-card{
+    display: inline-block;
+    width:150px;
+    height:150px;
+}
+#p1{
+    --background: url('../../../images/legume/ardei_iuti.jpg');
+}
+#p2{
+    --background: url('../../../images/legume/ardei_porto.jpg');
+}
+#p3{
+    --background: url('../../../images/legume/ardei_rosii.jpg');
+}
+#p4{
+    --background: url('../../../images/legume/ardei_verzi.jpg');
+}
+.scroll{
+     overflow-x: scroll;
+     overflow-y: hidden;
+     white-space: nowrap;
+     &::-webkit-scrollbar{
+         display: none;
+     }
+}
