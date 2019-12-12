@@ -3,13 +3,25 @@ ion-button{
     --background-hover: #e6e6ff;
     --color:  #4e4e4e;
     width: 250px;
-    height:80px;
+    height:100px;
     --opacity: 75%;
     font-weight: bold;
     font-size:20px;
     //font-family: "Indie Flower";
     //src: url('../../../fonts/IndieFlower-Regular.ttf');
+}
 
+#BM{
+    top: 30%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+#BD{
+    top: 55%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
 }
 
  .Content{
@@ -25,6 +37,10 @@ ion-button{
  }
 
  ion-content{
-    --background: url('../../../images/cov.jpg');    
-    --background-size: cover;
+    --background: url('../../../images/coo.jpg') no-repeat center center fixed;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
  }
