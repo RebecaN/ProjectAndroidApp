@@ -96,6 +96,20 @@
     </ion-card>
   </div>
 
+  <h1>Products</h1>
+<!--trebuie sa bagam cumva sa retina cardurile datele din DB-->
+  <ion-list>
+    <ng-container *ngFor="let p of products">
+      <ion-item>
+        <div class="d-flex justify-content-between" style="width: 100%;">
+          <div>{{p.id}}</div>
+          <div>{{p.name}}</div>
+          <div>{{p.description}}</div>
+        </div>
+      </ion-item>
+    </ng-container>
+  </ion-list>
+
   <div>
     <ion-button expand="block" routerLink="/recipes" routerDirection="forward">
       Retete

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-//ceva db ing??
 import { ApiService } from "src/app/api/api.service";
+import { Product } from "src/app/model/product.model";
+
 @Component({
   selector: 'app-food',
   templateUrl: './food.page.html',
@@ -8,6 +9,7 @@ import { ApiService } from "src/app/api/api.service";
 })
 export class FoodPage implements OnInit {
 
+  public products: Array<Product> = [];
   constructor(private apiService: ApiService) { }
 //URL Legume
   ardei_I = "assets/legume/ardei_iuti.jpg";
@@ -63,9 +65,14 @@ export class FoodPage implements OnInit {
    carnatURL = `url(${this.carnat})`;
    crap = "assets/prod_animal/crap.jpg";
    crapURL = `url(${this.crap})`;
-  ngOnInit() {
-    this.apiService.getAllProducts().subscribe(res => {
-      console.log(res);
+  
+   ngOnInit() {
+    //this.apiService.getAllProducts().subscribe(res => {
+      //console.log(res);
+    this.apiService.getAllProducts().subscribe(apiProducts => {
+      for (let prod of apiProducts) {
+        this.products.push(new Product(prod.name, prod.description, prod.id));
+      }
     });
   }
 

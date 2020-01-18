@@ -5,7 +5,8 @@ console.log("---- Starting the backend -----")
  const app = express();
  const productRouter = require("./route/product.route");
 
- const Product = require("./db-model/Product");
+ //const Product = require("./db-model/Product");
+ const Product = require("./model/Product");
 
  const mongoose = require("mongoose");
 //se creaza in mongo DB Legume
