@@ -1,4 +1,3 @@
-//const Product = require("../db-model/Product");
 const Product = require("../model/Product");
 const ProductDto = require("../dto/Product");
 
