@@ -4,7 +4,7 @@
     text-align: left;
 }
 //scrollbar
-ion-card{
+ion-checkbox, ion-card{
     display: inline-block;
     width:100px;
     height:120px;
@@ -16,4 +16,16 @@ ion-card{
     &::-webkit-scrollbar{
         display: none;
     }
+}
+
+ion-checkbox{
+    display: inline-block;
+    width:100px;
+    height:120px;
+    opacity: 10%;
+    --color: #000000;
+    --background: #000000;
+    --checkmark-color: #ffffff;
+    --background-checked: #0000cc;
+    --border-color-checked: #0000cc;
 }
