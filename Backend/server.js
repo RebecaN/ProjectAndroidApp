@@ -29,7 +29,7 @@ function _fillUpDB() {
   products.push(
     new Product({ name: "test", description: "test", id: 1 })
   );
-  
+
   for (const p of products) {
     p.save();
   }
