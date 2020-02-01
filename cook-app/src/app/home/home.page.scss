@@ -5,11 +5,15 @@ ion-button{
     width: 250px;
     height:100px;
     --opacity: 75%;
+    font-size: 25px;
     font-weight: bold;
-    font-size:20px;
-    //font-family: "Indie Flower";
-    //src: url('../../../fonts/IndieFlower-Regular.ttf');
+    font-family: 'Satisfy', cursive;
 }
+ion-title{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Satisfy', cursive; 
+ }
 
 #BM{
     top: 30%;
@@ -24,7 +28,7 @@ ion-button{
     transform: translate(-50%, -50%);
 }
 
- .Content{
+.Content{
      padding-top: 2.35cm;
      padding-left: 0.6cm;
  
@@ -33,7 +37,7 @@ ion-button{
  .title{
      --background:  #a9a9a9;
      color:#4e4e4e;
-     text-align: left;
+     text-align: center;    
  }
 
  ion-content{
@@ -41,6 +45,7 @@ ion-button{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    
+    background-size: cover;  
  }
+
+

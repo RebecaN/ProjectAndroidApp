@@ -1,7 +1,6 @@
 .title{
     --background:#a9a9a9;
-    color:#4e4e4e;
-    text-align: left;
+    text-align: center;
 }
 //scrollbar
 ion-checkbox, ion-card{
@@ -29,3 +28,21 @@ ion-checkbox{
     --background-checked: #0000cc;
     --border-color-checked: #0000cc;
 }
+
+h2,ion-title{
+    font-size: 25px;
+    font-family: 'Satisfy', cursive; 
+    font-weight: bold;
+    color:#4e4e4e;
+    margin-left: 5px;
+}
+
+ion-button{
+    --background:#e6e6ff;
+    --background-hover: #e6e6ff;
+    --color:#4e4e4e;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Satisfy', cursive;
+}
+
