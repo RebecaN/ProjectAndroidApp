@@ -16,7 +16,7 @@ console.log("---- Starting the backend -----")
       useUnifiedTopology: true
   });
 
-  _fillUpDB();
+  //_fillUpDB();
   app.use(cors());
   app.use("/", productRouter);
 
@@ -24,13 +24,13 @@ console.log("---- Starting the backend -----")
     console.log("listening on 3002");
 });
 
-function _fillUpDB() {
-  const products = [];
-  products.push(
-    new Product({ name: "test", description: "test", id: 1 })
-  );
+// function _fillUpDB() {
+//   const products = [];
+//   products.push(
+//     new Product({ name: "test", description: "test", id: 1 })
+//   );
 
-  for (const p of products) {
-    p.save();
-  }
-}
+//   for (const p of products) {
+//     p.save();
+//   }
+// }
