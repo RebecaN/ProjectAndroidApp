@@ -1,0 +1,28 @@
+img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title{
+    --background:#a9a9a9;
+    text-align: center;
+}
+
+ion-title{
+    font-size: 25px;
+    font-family: 'Satisfy', cursive; 
+    font-weight: bold;
+    color:#4e4e4e;
+    margin-left: 5px;
+}
+ion-card-title{
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 40px;
+    font-family: 'Satisfy', cursive;
+    font-weight: bold;
+}
+

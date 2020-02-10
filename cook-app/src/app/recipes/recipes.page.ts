@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-recipes',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipesPage implements OnInit {
 
-  constructor() { }
+  constructor(private activeRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.activeRoute.snapshot.paramMap.get('id');
   }
+
+  // openWebsite(){
+  //   window.open(this.information.Website, '_blank');
+  // }
 
 }
