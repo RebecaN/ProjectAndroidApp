@@ -16,7 +16,7 @@ console.log("---- Starting the backend -----")
       useUnifiedTopology: true
   });
 
-  //_fillUpDB();
+  // _fillUpDB();
   app.use(cors());
   app.use("/", productRouter);
 
